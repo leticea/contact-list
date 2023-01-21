@@ -35,7 +35,7 @@ const Form = ({ handleAdd, contactList, setContactList }) => {
         </C.InputContent>
         <C.InputContent>
           <C.Label>Telefone</C.Label>
-          <C.Input value={phoneNumber} type="number" onChange={(e) => setPhoneNumber(e.target.value)} />
+          <C.Input value={phoneNumber} placeholder="(99) 99999-9999 " type="number" onChange={(e) => setPhoneNumber(e.target.value)} />
         </C.InputContent>
         <C.Button onClick={handleSave}>SALVAR CONTATO</C.Button>
       </C.Container>
