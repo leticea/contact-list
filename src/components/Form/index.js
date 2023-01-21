@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import Grid from "../Grid";
 import * as C from "./styles";
-import ReactInputMask from "react-input-mask";
 
-const Form = () => {
+const Form = ({ handleAdd, contactList, setContactList }) => {
   const [contactName, setContactName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
 
@@ -13,6 +13,17 @@ const Form = () => {
       alert("Informe o nome e o telefone!");
       return;
     }
+
+    const contact = {
+      id: generateID(),
+      contactName: contactName,
+      phoneNumber: phoneNumber
+    };
+
+    handleAdd(contact);
+
+    setContactName("");
+    setPhoneNumber("");
   };
 
   return (
@@ -24,10 +35,11 @@ const Form = () => {
         </C.InputContent>
         <C.InputContent>
           <C.Label>Telefone</C.Label>
-          <C.ReactInputMask value={phoneNumber} type="number" onChange={(e) => setPhoneNumber(e.target.value)} />
+          <C.Input value={phoneNumber} type="number" onChange={(e) => setPhoneNumber(e.target.value)} />
         </C.InputContent>
         <C.Button onClick={handleSave}>SALVAR CONTATO</C.Button>
       </C.Container>
+      <Grid itens={contactList} setItens={setContactList}/>
     </>
   );
 };

@@ -31,14 +31,6 @@ export const Input = styled.input`
   border: 1px solid #ccc;
 `;
 
-export const ReactInputMask = styled.input`
-  outline: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  font-size: 15px;
-  border: 1px solid #ccc
-`;
-
 export const Button = styled.button`
   padding: 5px 10px;
   border: none;
