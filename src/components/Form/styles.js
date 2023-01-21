@@ -31,15 +31,12 @@ export const Input = styled.input`
   border: 1px solid #ccc;
 `;
 
-export const RadioGroup = styled.div`
-  display: flex;
-  align-items: center;
-  input {
-    margin-left: 20px;
-    margin-right: 5px;
-    accent-color: black;
-    margin-top: 0;
-  }
+export const ReactInputMask = styled.input`
+  outline: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 15px;
+  border: 1px solid #ccc
 `;
 
 export const Button = styled.button`
