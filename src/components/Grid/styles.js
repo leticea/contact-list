@@ -18,6 +18,7 @@ export const Tr = styled.tr``;
 
 export const Th = styled.th`
   border-bottom: inset;
+  font-size: 20px;
   padding-bottom: 5px;
   text-align: ${(props) => (props.alignCenter ? "center" : "start")};
   width: ${(props) => (props.width ? props.width + "%" : "auto")};

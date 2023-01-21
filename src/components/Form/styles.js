@@ -18,7 +18,9 @@ export const Container = styled.div`
 
 export const InputContent = styled.div`
   display: flex;
+  align-content: center;
   flex-direction: column;
+  font-size: 20px;
 `;
 
 export const Label = styled.label``;
@@ -27,12 +29,13 @@ export const Input = styled.input`
   outline: none;
   border-radius: 5px;
   padding: 5px 10px;
-  font-size: 15px;
+  font-size: 19px;
   border: 1px solid #ccc;
 `;
 
 export const Button = styled.button`
   padding: 5px 10px;
+  font-size: 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
