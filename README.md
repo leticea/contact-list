@@ -8,7 +8,7 @@
 <br>
 
 <p align="center">
-  <img alt="contact-list" src=".github/image.png">
+  <img alt="" src=".github/image.png">
 </p>
 
 ## Contact List
